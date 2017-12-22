@@ -11,6 +11,10 @@ datagroup: local_postgres_default_datagroup {
   max_cache_age: "1 hour"
 }
 
+datagroup: 24_hour {
+  sql_trigger: select current_date ;;
+}
+
 persist_with: local_postgres_default_datagroup
 
 explore: weather {}

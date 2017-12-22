@@ -2,7 +2,8 @@ view: pdt_1 {
   derived_table: {
     sql: select 1 as col_1;
       ;;
-  datagroup_trigger: local_postgres_default_datagroup
+  datagroup_trigger: 24_hour
+  indexes: ["col_1"]
   }
 
   measure: count {
